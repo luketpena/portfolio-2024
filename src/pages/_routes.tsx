@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { HomePage } from './HomePage/HomePage';
 import { IconName } from '../components/Icon/Icon';
+import { AboutPage } from './AboutPage/AboutPage';
 
 export interface RouteFormat {
   path: string;
@@ -43,10 +44,10 @@ export const routes: RouteFormat[] = [
     showInNav: true,
   },
   {
-    path: '/portfolio',
+    path: '/about',
     color: '$FF0000',
-    title: 'Portfolio',
-    element: <HomePage />,
+    title: 'About This Site',
+    element: <AboutPage />,
     icon: 'FaCode',
     showInNav: true,
   },
