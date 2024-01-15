@@ -4,6 +4,18 @@
 
 p,
 h1,
-h2 {
+h2,
+h3 {
   color: white;
+}
+
+p {
+  font-family: 'Calibri', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: monospace;
 }
