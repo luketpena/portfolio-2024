@@ -13,7 +13,7 @@ export const NavMenu: React.FC = () => {
   }
 
   return (
-    <div className="w-full bg-slate-600 fixed flex justify-between items-center px-4">
+    <div className="w-full bg-slate-600 fixed flex justify-between items-center px-4 z-50">
       <NavMenuLink label="Home" path="/" />
       <div
         className="flex items-center"
