@@ -1,32 +1,34 @@
-import { ReactNode, useEffect } from 'react';
-import { Outlet, useLocation } from 'react-router';
-import { routes } from '../../pages/_routes';
-import { NavMenu } from '../NavMenu/NavMenu';
+import { ReactNode } from 'react';
+import { motion } from 'framer-motion';
 
 interface PageWrapperProps {
-  children?: ReactNode;
+  children: ReactNode;
 }
 
-export const PageWrapper: React.FC<PageWrapperProps> = () => {
-  const location = useLocation();
+const routeVariants = {
+  initial: {
+    y: '16px',
+    opacity: 0,
+  },
+  animate: {
+    y: '0px',
+    opacity: 1,
+  },
+};
 
-  // Updating the page title to include the route name
-  useEffect(() => {
-    const activeRoute = routes.find(
-      (route) => location.pathname === route.path,
-    );
-    console.log(location.pathname, activeRoute);
-    if (activeRoute) {
-      document.title = `Luke Peña | ${activeRoute.title}`;
-    }
-  }, [location.pathname]);
-
+export const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
   return (
-    <div className="h-[300vh] bg-slate-900">
-      <NavMenu />
-      <div className="pt-10">
-        <Outlet />
-      </div>
-    </div>
+    <motion.div
+      variants={routeVariants}
+      initial="initial"
+      animate="animate"
+      transition={{
+        duration: 0.5,
+        type: 'tween',
+      }}
+      className="max-w-[100%] mx-auto"
+    >
+      {children}
+    </motion.div>
   );
 };
