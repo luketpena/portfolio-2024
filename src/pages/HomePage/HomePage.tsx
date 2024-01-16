@@ -1,9 +1,57 @@
+import { NavLink } from 'react-router-dom';
 import { PageWrapper } from '../../components/PageWrapper/PageWrapper';
+import './home-page.css';
+
+const links = [
+  {
+    label: 'Work',
+    to: '/work',
+  },
+  {
+    label: 'Projects',
+    to: '/projects',
+  },
+  {
+    label: 'Contact',
+    to: '/contact',
+  },
+];
 
 export const HomePage: React.FC = () => {
   return (
     <PageWrapper>
-      <h1 className="text-red-500 bg-red-500">What's up</h1>
+      <div className="home-page_container">
+        {/* Title */}
+        <div className="home-page_title">
+          <h1>Luke Peña</h1>
+          <h2>Full-stack developer, musician, creativity goblin</h2>
+        </div>
+
+        {/* Bio */}
+        <div className="home-page_bio">
+          <p>
+            I am a full-stack developer who understands the importance of
+            balancing good clean code with experimentation and discovery.
+          </p>
+          <p>
+            I've been a hobby programmer since 2002, but embraced it as my
+            profession in 2020.
+          </p>
+          <p>Perpetually finding new ways to be creative and curious.</p>
+        </div>
+
+        {/* Biiig links */}
+        <div className="home-page_links">
+          {links.map((link) => (
+            <NavLink
+              to={link.to}
+              className="text-white hover:-translate-x-8 hover:text-orange-500 transition-all"
+            >
+              {link.label}
+            </NavLink>
+          ))}
+        </div>
+      </div>
     </PageWrapper>
   );
 };
