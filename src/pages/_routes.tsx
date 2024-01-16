@@ -2,6 +2,9 @@ import { ReactNode } from 'react';
 import { HomePage } from './HomePage/HomePage';
 import { IconName } from '../components/Icon/Icon';
 import { AboutPage } from './AboutPage/AboutPage';
+import { WorkPage } from './WorkPage/WorkPage';
+import { ProjectPage } from './ProjectPage/ProjectPage';
+import { ContactPage } from './ContactPage/ContactPage';
 
 export interface RouteFormat {
   path: string;
@@ -14,15 +17,9 @@ export interface RouteFormat {
 
 export const routes: RouteFormat[] = [
   {
-    path: '/test',
-    color: '$00FF00',
-    title: 'Test',
-    element: <HomePage />,
-  },
-  {
     path: '/',
     color: '$FF0000',
-    title: 'Home',
+    title: '',
     element: <HomePage />,
     icon: 'GiBirdHouse',
     showInNav: true,
@@ -31,7 +28,7 @@ export const routes: RouteFormat[] = [
     path: '/work',
     color: '$FF0000',
     title: 'Work',
-    element: <HomePage />,
+    element: <WorkPage />,
     icon: 'GiSuitcase',
     showInNav: true,
   },
@@ -39,8 +36,16 @@ export const routes: RouteFormat[] = [
     path: '/projects',
     color: '$FF0000',
     title: 'Projects',
-    element: <HomePage />,
+    element: <ProjectPage />,
     icon: 'GiLightBulb',
+    showInNav: true,
+  },
+  {
+    path: '/contact',
+    color: '$FF0000',
+    title: 'Say Hello',
+    element: <ContactPage />,
+    icon: 'GiMailbox',
     showInNav: true,
   },
   {

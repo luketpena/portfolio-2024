@@ -29,7 +29,7 @@ export const WorkProject: React.FC<WorkProjectProps> = ({
       <div className="grid md:grid-cols-[1fr_2fr] gap-4 grid-cols-[1fr] grid-rows-[auto_auto]">
         <div className="flex flex-col gap-4">
           <ChipList chips={technology} />
-          <p className="whitespace-pre-wrap text-slate-400">{description}</p>
+          <p className="whitespace-pre-line text-slate-400">{description}</p>
         </div>
         <div>
           <div className="flex flex-col gap-4">
@@ -38,7 +38,7 @@ export const WorkProject: React.FC<WorkProjectProps> = ({
                 <h4 className="text-xl" style={{ color }}>
                   {contribution.title}
                 </h4>
-                <p className="ml-4 whitespace-pre-wrap">{contribution.text}</p>
+                <p className="ml-4 whitespace-pre-line">{contribution.text}</p>
               </div>
             ))}
           </div>

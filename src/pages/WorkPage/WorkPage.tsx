@@ -1,5 +1,5 @@
 import { PageWrapper } from '../../components/PageWrapper/PageWrapper';
-import { projects } from './work-page-projects';
+import { projects } from './work-page-list';
 import { WorkProject } from './components/WorkProject/WorkProject';
 import { Anchor } from '../../components/Anchor/Anchor';
 
