@@ -18,17 +18,19 @@ const routeVariants = {
 
 export const PageWrapper: React.FC<PageWrapperProps> = ({ children }) => {
   return (
-    <motion.div
-      variants={routeVariants}
-      initial="initial"
-      animate="animate"
-      transition={{
-        duration: 0.5,
-        type: 'tween',
-      }}
-      className="max-w-[100%] mx-auto"
-    >
-      {children}
-    </motion.div>
+    <div className="grow flex flex-col overflow-hidden">
+      <motion.div
+        variants={routeVariants}
+        initial="initial"
+        animate="animate"
+        transition={{
+          duration: 0.5,
+          type: 'tween',
+        }}
+        className="grow flex flex-col relative p-4"
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 };

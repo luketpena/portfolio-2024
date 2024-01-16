@@ -15,18 +15,22 @@ export const RouteOutlet: React.FC<RouteOutletProps> = () => {
     const foundRoute = routes.find((route) => location.pathname === route.path);
 
     // Setting the document title from the found route
-    if (foundRoute) {
+    if (foundRoute && foundRoute.title) {
       document.title = `Luke Peña | ${foundRoute.title}`;
+    } else {
+      document.title = 'Luke Peña';
     }
 
     return foundRoute;
   }, [location.pathname]);
 
   return (
-    <div className="min-h-[100vh] bg-gray-800">
+    <div className="bg-gradient-to-tl from-slate-900 to-slate-800">
       <NavMenu />
-      <div className="p-4 pt-14 flex flex-col gap-4">
-        {activeRoute && <PageTitle label={activeRoute.title} />}
+      <div className="pt-10 flex flex-col min-h-[100vh]">
+        {activeRoute && activeRoute.title && (
+          <PageTitle label={activeRoute.title} />
+        )}
         <Outlet />
       </div>
     </div>
