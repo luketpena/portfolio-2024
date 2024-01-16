@@ -13,6 +13,10 @@ const attributionList: {
     name: 'Font Awesome 6',
     license: 'CC by 4.0',
   },
+  {
+    name: 'Simple Icons',
+    license: 'CC0 1.0 Universal',
+  },
 ];
 
 export const AboutPage: React.FC = () => {
