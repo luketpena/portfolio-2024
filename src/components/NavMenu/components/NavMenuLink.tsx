@@ -8,6 +8,7 @@ interface NavMenuLinkProps {
   label: string;
   setRouteLabel?: (v: string) => void;
   icon?: IconName;
+  external?: boolean;
 }
 
 export const NavMenuLink: React.FC<NavMenuLinkProps> = ({
@@ -15,6 +16,7 @@ export const NavMenuLink: React.FC<NavMenuLinkProps> = ({
   label,
   setRouteLabel,
   icon,
+  external,
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -24,8 +26,10 @@ export const NavMenuLink: React.FC<NavMenuLinkProps> = ({
   }, [location.pathname, path]);
 
   function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-    e.preventDefault();
-    navigate(path);
+    if (!external) {
+      e.preventDefault();
+      navigate(path);
+    }
   }
 
   function handleHover() {
@@ -36,12 +40,14 @@ export const NavMenuLink: React.FC<NavMenuLinkProps> = ({
 
   return (
     <a
+      target="_blank"
+      href={external ? path : undefined}
       onClick={handleClick}
       onMouseEnter={handleHover}
       className={classNames(
         'cursor-pointer hover:bg-white/25 p-2 transition-all border-b-2 border-transparent text-white',
         {
-          '!border-orange-500': isActive,
+          '!border-orange-500 bg-slate-700': isActive,
         },
       )}
     >

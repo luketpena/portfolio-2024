@@ -13,16 +13,18 @@ export const NavMenu: React.FC = () => {
   }
 
   return (
-    <div className="w-full bg-slate-600 fixed flex justify-between items-center px-4 z-50">
-      <NavMenuLink label="Home" path="/" />
+    <div className="w-full bg-slate-600 fixed flex justify-center md:justify-end items-center px-4 z-50">
       <div
-        className="flex items-center"
+        className="flex justify-center items-center"
         onMouseLeave={() => setRouteLabelActive(false)}
       >
         <p
-          className={classNames('opacity-0 transition-all text-white', {
-            'opacity-100 -translate-x-4': routeLabelActive,
-          })}
+          className={classNames(
+            'opacity-0 transition-all text-white hidden md:block',
+            {
+              'opacity-100 -translate-x-4': routeLabelActive,
+            },
+          )}
         >
           {routeLabel}
         </p>
@@ -37,6 +39,13 @@ export const NavMenu: React.FC = () => {
               setRouteLabel={triggerSetRouteLabel}
             />
           ))}
+        <NavMenuLink
+          path="https://www.linkedin.com/in/luke-pena-669473122/"
+          label="LinkedIn"
+          icon="SiLinkedin"
+          setRouteLabel={triggerSetRouteLabel}
+          external
+        />
       </div>
     </div>
   );
