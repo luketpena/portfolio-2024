@@ -175,4 +175,29 @@ We helped him build a platform that allows multiple users to collaborate in real
       },
     ],
   },
+
+  {
+    title: 'Wine Distributor Site & CMS',
+    yearRange: '(2019 - 2020)',
+    color: '#C6436A',
+    icon: 'GiWineBottle',
+    description: `This was a solo, freelance project for a local wine distributor.
+    
+    Their old website was very out of date and they were hoping for a brand refresh in addition to building out some new features.`,
+    technology: ['React', 'Angular', 'Heroku', 'PostgreSQL', 'Auth0'],
+    contributions: [
+      {
+        title: 'Requirements & Designs',
+        text: 'Because I was the only developer, I was responsible for every aspect of the project. I worked with the client to discover their requirements and come up with designs they liked.',
+      },
+      {
+        title: 'CMS + Authentication',
+        text: 'Previously, they had to do a new release with every update they wanted to make. They wanted the ability to make small content updates with an internal CMS. This involved implementing authentication with Auth0 and creating a separate app from the primary website.',
+      },
+      {
+        title: 'Event Management',
+        text: 'They wanted the ability to schedule events, both public and client only. The client-only list had to be available by authenticated client accounts only.',
+      },
+    ],
+  },
 ];
