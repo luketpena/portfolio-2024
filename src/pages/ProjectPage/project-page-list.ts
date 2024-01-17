@@ -2,9 +2,11 @@ import { PersonalProjectProps } from './components/PersonalProject/PersonalProje
 
 import dawg00 from '../../assets/images/projects/dawg_00.gif';
 
-import rocket00 from '../../assets/images/projects/rocket_00.png';
+// import rocket00 from '../../assets/images/projects/rocket_00.png';
+import rocket01 from '../../assets/images/projects/rocket_01.gif';
 
-import sailbound00 from '../../assets/images/projects/sailbound_00.png';
+// import sailbound00 from '../../assets/images/projects/sailbound_00.png';
+import sailbound01 from '../../assets/images/projects/sailbound_01.gif';
 
 import catan00 from '../../assets/images/projects/catan_00.jpg';
 import catan01 from '../../assets/images/projects/catan_01.jpg';
@@ -39,8 +41,48 @@ import art05 from '../../assets/images/projects/art_05.jpeg';
 
 export const projects: PersonalProjectProps[] = [
   {
+    title: 'Barrel Rocketeer',
+    subtitle: 'Ongoing Development',
+    color: '#7ADFEE',
+    contrast: '#0D445B',
+    icon: 'GiRocket',
+    images: [rocket01],
+    description: `The theme for the game jam was "Between Worlds", and I had been recently playing a lot of Zelda: Tears of the Kingdom.
+    
+    So I could think of no better way to bring those two together than to remake the ToTK ultrahand system in 2D to build rocketships to fly literally between worlds
+    
+    Glue pieces together, assign automation behaviors, and see what scores your ship can achieve on its flight to a new home... if it can make it that far.`,
+    actions: [
+      {
+        text: 'Blast off at Itch.io',
+        icon: 'FaItchIo',
+        href: 'https://penapenyata.itch.io/barrel-rocketeer',
+      },
+    ],
+  },
+  {
+    title: 'Sailbound',
+    subtitle: 'Long-term Project',
+    color: '#278FFF',
+    icon: 'GiSailboat',
+    images: [sailbound01],
+    description: `Sailbound began its life as a game jam game, where I developed the concept, art, sound, and music, but was not directly involved in the code. After all was said and done, I wanted to rebuild it myself but better.
+    
+    Over the years, I've built and rebuilt this game from top to bottom repeatedly and taken it to a number of conventions. It has served as a wonderful learning ground, not just for solving new problems, but also for learning how I solve problems.
+    
+    Sailbound is a physics based sailing game inspired by Wind Waker. Bob above and below the water, dodging the dangers of the open ocean while chasing treasure.`,
+    actions: [
+      {
+        text: 'Original game jam version at Itch.io',
+        icon: 'FaItchIo',
+        href: 'https://fib.itch.io/washed-up',
+      },
+    ],
+  },
+
+  {
     title: 'Dawg of the Dead',
-    subtitle: 'Game Development',
+    subtitle: 'Game Jam (48hr)',
     color: '#ff3c36',
     icon: 'GiTombstone',
     images: [dawg00],
@@ -57,45 +99,7 @@ export const projects: PersonalProjectProps[] = [
       },
     ],
   },
-  {
-    title: 'Barrel Rocketeer',
-    subtitle: 'Game Development',
-    color: '#7ADFEE',
-    contrast: '#0D445B',
-    icon: 'GiRocket',
-    images: [rocket00],
-    description: `The theme for the game jam was "Between Worlds", and I had been recently playing a lot of Zelda: Tears of the Kingdom.
-    
-    So I could think of no better way to bring those two together than to remake the ToTK ultrahand system in 2D to build rocketships to fly literally between worlds
-    
-    Glue pieces together, assign automation behaviors, and see what scores your ship can achieve on its flight to a new home... if it can make it that far.`,
-    actions: [
-      {
-        text: 'Blast off at Itch.io',
-        icon: 'FaItchIo',
-        href: 'https://penapenyata.itch.io/barrel-rocketeer',
-      },
-    ],
-  },
-  {
-    title: 'Sailbound',
-    subtitle: 'Game Development',
-    color: '#278FFF',
-    icon: 'GiSailboat',
-    images: [sailbound00],
-    description: `Sailbound began its life as a game jam game, where I developed the concept, art, sound, and music, but was not directly involved in the code. After all was said and done, I wanted to rebuild it myself but better.
-    
-    Over the years, I've built and rebuilt this game from top to bottom repeatedly and taken it to a number of conventions. It has served as a wonderful learning ground, not just for solving new problems, but also for learning how I solve problems.
-    
-    Sailbound is a physics based sailing game inspired by Wind Waker. Bob above and below the water, dodging the dangers of the open ocean while chasing treasure.`,
-    actions: [
-      {
-        text: 'Original game jam version at Itch.io',
-        icon: 'FaItchIo',
-        href: 'https://fib.itch.io/washed-up',
-      },
-    ],
-  },
+
   {
     title: '3D Catan',
     subtitle: 'Modeling, 3D printing, and model painting',
