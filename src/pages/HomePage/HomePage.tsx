@@ -24,7 +24,7 @@ export const HomePage: React.FC = () => {
         {/* Title */}
         <div className="home-page_title">
           <h1>Luke Peña</h1>
-          <h2>Full-stack developer, musician, creativity goblin</h2>
+          <h2>Full-stack developer, musician, artist</h2>
         </div>
 
         {/* Bio */}

@@ -32,8 +32,11 @@ export const PersonalProject: React.FC<PersonalProjectProps> = ({
 }) => {
   return (
     <Highlight title={title} subtitle={subtitle} color={color} icon={icon}>
-      <div className="grid grid-cols-1 grid-rows-[300px_auto] md:grid-cols-[300px_auto] gap-4 min-h-[300px]">
-        <ImageCarousel images={images} />
+      <div className="grid grid-cols-1 grid-rows-[300px_auto] md:grid-rows-1 md:grid-cols-[300px_auto] gap-4 min-h-[300px]">
+        <ImageCarousel
+          images={images}
+          alt={`An image for the ${title} project`}
+        />
         <div className="flex flex-col justify-between max-w-[700px]">
           <p className="whitespace-pre-line ">{description}</p>
           {actions && (

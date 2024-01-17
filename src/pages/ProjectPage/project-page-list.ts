@@ -49,7 +49,7 @@ export const projects: PersonalProjectProps[] = [
     images: [rocket01],
     description: `The theme for the game jam was "Between Worlds", and I had been recently playing a lot of Zelda: Tears of the Kingdom.
     
-    So I could think of no better way to bring those two together than to remake the ToTK ultrahand system in 2D to build rocketships to fly literally between worlds
+    I brought those together by rebuilding the ToTK ultrahand system in 2D in order to build rocketships to fly literally between worlds
     
     Glue pieces together, assign automation behaviors, and see what scores your ship can achieve on its flight to a new home... if it can make it that far.`,
     actions: [
@@ -162,7 +162,7 @@ export const projects: PersonalProjectProps[] = [
   {
     title: 'Art',
     subtitle: 'Ink, pencil, oil pastel, watercolor',
-    color: '#C6436A',
+    color: '#FF4A80',
     icon: 'GiPaintBrush',
     images: [art05, art00, art02, art01, art03, art04],
     description: `I dabble in art. Not a lot, but just enough to be dangerous.

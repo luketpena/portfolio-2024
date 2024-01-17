@@ -182,7 +182,7 @@ We helped him build a platform that allows multiple users to collaborate in real
   {
     title: 'Wine Distributor Site & CMS',
     yearRange: '(2019 - 2020)',
-    color: '#C6436A',
+    color: '#FF4A80',
     icon: 'GiWineBottle',
     description: `This was a solo, freelance project for a local wine distributor.
     
@@ -191,15 +191,15 @@ We helped him build a platform that allows multiple users to collaborate in real
     contributions: [
       {
         title: 'Requirements & Designs',
-        text: 'Because I was the only developer, I was responsible for every aspect of the project. I worked with the client to discover their requirements and to come up with designs they could be excited about.',
+        text: 'Because I was the only developer, I was responsible for every aspect of the project. I worked alongside the client to discover their requirements and to come up with designs they could be excited about.',
       },
       {
         title: 'CMS + Authentication',
-        text: 'Previously, they had to do a new release for every update they wanted to make to their website, no matter how small. They wanted the ability to make small content updates with an internal CMS. This involved implementing authentication with Auth0 and creating a separate app from the primary website.',
+        text: 'Previously, they had to do a new release for every update they wanted to make to their website, no matter how small. I made it possible for them to make small content updates with an internal CMS. This involved implementing authentication with Auth0 and creating an entire separate app from the primary website.',
       },
       {
         title: 'Event Management',
-        text: 'They wanted the ability to schedule events, both public and client only. The client-only list had to be available by authenticated client accounts only.',
+        text: 'I designed a system that allowed them to schedule events, both public and client only, where the client schedule was only visible behind an authenticated portal.',
       },
     ],
   },
