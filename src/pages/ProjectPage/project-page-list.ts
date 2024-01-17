@@ -71,7 +71,7 @@ export const projects: PersonalProjectProps[] = [
     Sailbound is a physics based sailing game inspired by Wind Waker. Bob above and below the water, dodging the dangers of the open ocean while chasing treasure.`,
     actions: [
       {
-        text: 'Original game jam version at Itch.io',
+        text: 'Sail in the original at Itch.io',
         icon: 'FaItchIo',
         href: 'https://fib.itch.io/washed-up',
       },

@@ -26,7 +26,7 @@ export const Button: React.FC<ButtonProps> = ({
         onClick={onClick}
         className={classNames(
           className,
-          'bg-orange-600 w-max px-6 py-4 rounded-lg flex justify-center items-center gap-4 cursor-pointer hover:brightness-125 hover:scale-[102%] transition-all',
+          'bg-orange-600 w-max px-6 py-4 rounded-lg flex justify-center items-center gap-4 cursor-pointer hover:brightness-125 hover:scale-[102%] transition-all shadow-md hover:shadow-xl',
         )}
         style={{
           backgroundColor,
