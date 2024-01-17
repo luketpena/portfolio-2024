@@ -36,7 +36,7 @@ export const Highlight: React.FC<HighlightProps> = ({
       <div className="border-b my-2 border-slate-600" />
 
       {/* Hightlight body */}
-      <div>{children}</div>
+      <div className="w-max mx-auto max-w-[100%]">{children}</div>
     </section>
   );
 };
