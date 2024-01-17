@@ -13,9 +13,18 @@ p {
   font-family: 'Calibri', sans-serif;
 }
 
-h1,
-h2,
 h3,
-h4 {
+h4,
+h2 {
   font-family: monospace;
+}
+
+h1,
+.font-title {
+  font-family: 'Bebas Neue';
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf'); /* IE9 Compat Modes */
 }

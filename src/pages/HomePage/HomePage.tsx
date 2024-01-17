@@ -45,7 +45,7 @@ export const HomePage: React.FC = () => {
           {links.map((link) => (
             <NavLink
               to={link.to}
-              className="text-white hover:-translate-x-8 hover:text-orange-500 transition-all"
+              className="text-white hover:-translate-x-8 hover:text-orange-500 transition-all font-title"
             >
               {link.label}
             </NavLink>
