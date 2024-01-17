@@ -37,10 +37,10 @@ export const HomePage: React.FC = () => {
             I've been a hobby programmer since 2002, but embraced it as my
             profession in 2020.
           </p>
-          <p>Perpetually finding new ways to be creative and curious.</p>
+          <p>I am perpetually finding new ways to be creative and curious.</p>
         </div>
 
-        {/* Biiig links */}
+        {/* Biiiig links */}
         <div className="home-page_links">
           {links.map((link) => (
             <NavLink
