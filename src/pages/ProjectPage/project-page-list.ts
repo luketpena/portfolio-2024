@@ -131,7 +131,7 @@ export const projects: PersonalProjectProps[] = [
     color: '#8056F5',
     icon: 'GiScissors',
     images: [print00, print01, print02, print03, print04],
-    description: `The printer is retired for now. But before it got put away, I managed to try out lots of ideas - magic boxes, magic wands, magic rabits, magic crystals.
+    description: `The printer is retired for now. But before it got put away, I managed to try out lots of ideas - magic boxes, magic wands, magic rabbits, magic crystals.
     
     3D modeling and printing feels like magic. And I have many more ideas when I choose to get back into the hobby.`,
   },
