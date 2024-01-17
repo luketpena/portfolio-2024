@@ -32,8 +32,6 @@ import music01 from '../../assets/images/projects/music_01.jpeg';
 import music02 from '../../assets/images/projects/music_02.jpeg';
 import music03 from '../../assets/images/projects/music_03.jpeg';
 
-import art00 from '../../assets/images/projects/art_00.jpeg';
-import art01 from '../../assets/images/projects/art_01.jpeg';
 import art02 from '../../assets/images/projects/art_02.png';
 import art03 from '../../assets/images/projects/art_03.png';
 import art04 from '../../assets/images/projects/art_04.png';
@@ -164,7 +162,7 @@ export const projects: PersonalProjectProps[] = [
     subtitle: 'Ink, pencil, oil pastel, watercolor',
     color: '#FF4A80',
     icon: 'GiPaintBrush',
-    images: [art05, art00, art02, art01, art03, art04],
+    images: [art05, art02, art03, art04],
     description: `I dabble in art. Not a lot, but just enough to be dangerous.
     
     I did a lot of highly detailed pencil portraits long ago, maybe some landscapes.
