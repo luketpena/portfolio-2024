@@ -21,6 +21,8 @@ export const RouteOutlet: React.FC<RouteOutletProps> = () => {
       document.title = 'Luke Peña';
     }
 
+    window.scrollTo(0, 0);
+
     return foundRoute;
   }, [location.pathname]);
 
