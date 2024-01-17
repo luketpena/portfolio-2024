@@ -33,7 +33,7 @@ export const ContactPage: React.FC = () => {
             <a
               href={link.href}
               target="_blank"
-              className="text-slate-500 hover:text-white transition-colors"
+              className="text-slate-500 hover:text-white hover:scale-105 transition-all"
             >
               <Icon name={link.icon} size="48px" />
             </a>

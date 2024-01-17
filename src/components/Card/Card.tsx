@@ -19,7 +19,7 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div
       className={classNames(
-        'border border-slate-600 rounded-xl p-4 relative',
+        'border border-slate-600 rounded-xl p-4 pt-6 relative',
         className,
         {
           'text-left': align === 'left',
@@ -30,7 +30,7 @@ export const Card: React.FC<CardProps> = ({
       {title && (
         <h2
           className={classNames(
-            'absolute text-lg top-[-14px] flex items-center gap-4 bg-slate-700 rounded-full px-4 text-orange-500',
+            'absolute text-lg top-[-14px] flex items-center gap-4 bg-slate-600 rounded-full px-4 text-orange-400',
             {
               'left-8': align === 'left',
               'right-8': align === 'right',

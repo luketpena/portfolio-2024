@@ -21,7 +21,7 @@ export const Highlight: React.FC<HighlightProps> = ({
     <section className="bg-slate-700 p-4 shadow-lg relative -mx-4">
       {/* Title + Subtitle row */}
       <div className="flex items-center gap-1 md:gap-4 flex-col md:flex-row">
-        <div className="flex items-center gap-2">
+        <div className="flex items-start md:items-center gap-2">
           {icon && <Icon name={icon} size="48px" color={color} />}
           {title && (
             <h3 className="text-3xl" style={{ color }}>

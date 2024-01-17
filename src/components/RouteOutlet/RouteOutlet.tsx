@@ -27,7 +27,7 @@ export const RouteOutlet: React.FC<RouteOutletProps> = () => {
   }, [location.pathname]);
 
   return (
-    <div className="bg-gradient-to-tl from-slate-900 to-slate-800">
+    <div className="bg-gradient-to-tl from-orange-900 to-slate-800">
       <NavMenu />
       <div className="pt-10 flex flex-col min-h-[100vh]">
         {activeRoute && activeRoute.title && (

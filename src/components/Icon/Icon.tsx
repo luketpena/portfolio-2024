@@ -23,13 +23,15 @@ const Icon: React.FC<IconProps> = ({
   className,
 }) => {
   return (
-    <IconContext.Provider value={{ color, size }}>
-      {name &&
-        React.createElement(IconOptions[name], {
-          className,
-          style: { strokeWidth },
-        })}
-    </IconContext.Provider>
+    <div style={{ minWidth: size }}>
+      <IconContext.Provider value={{ color, size }}>
+        {name &&
+          React.createElement(IconOptions[name], {
+            className,
+            style: { strokeWidth },
+          })}
+      </IconContext.Provider>
+    </div>
   );
 };
 
