@@ -2,10 +2,12 @@ import { useState } from 'react';
 import Icon from '../Icon/Icon';
 
 interface ImageCarouselProps {
+  alt?: string;
   images?: string[];
 }
 
 export const ImageCarousel: React.FC<ImageCarouselProps> = ({
+  alt,
   images = [],
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,13 +29,18 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
   }
 
   return (
-    <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl">
+    <div className="relative h-full rounded-3xl overflow-hidden shadow-2xl  bg-slate-900">
       {/* Image display */}
-      <div
-        className="w-full h-full bg-center bg-cover"
-        style={{ backgroundImage: `url("${images[currentIndex]}")` }}
+      <img
+        alt={
+          alt
+            ? `${alt}, image ${currentIndex + 1} of ${images.length}`
+            : undefined
+        }
+        key={currentIndex}
+        src={images[currentIndex]}
+        className="object-cover w-full h-full md:aspect-square"
       />
-      {/* <img key={currentIndex} src={images[currentIndex]} /> */}
 
       {/* Navigation controls */}
       {images.length > 1 && (
